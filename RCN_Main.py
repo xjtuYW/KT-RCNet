@@ -1,5 +1,8 @@
 import os
 import argparse
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '5'
+
 from RCN_Trainer import RCN_Trainer
 
 from tools.utils import *
@@ -17,6 +20,10 @@ def set_parameters(parser):
     # general setting
     parser.add_argument('--OSS', type=str2bool, default=False)
     parser.add_argument('--DLC', type=str2bool, default=False)
+    
+    parser.add_argument('-world_size', type=int, default=1)
+    parser.add_argument('-rank', type=int, default=0)
+    
     parser.add_argument('--output_form_1', type=str, default='logit',
                         choices=['logit', 'softmax', 'scaled_softmax'],
                         help='The form of output given by model 1') #
