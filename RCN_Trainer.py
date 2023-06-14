@@ -1024,7 +1024,8 @@ class RCN_Trainer():
         model.eval()
         self.args.state = 'test'
         self.args.used_data = self.data_prefix + 'base'
-        self.args.sampler = 'std_official'
+        # self.args.sampler = 'std_official'
+        self.args.sampler = 'std'
 
         base_loader = get_dataloader(self.args)
         embedding_list = []
