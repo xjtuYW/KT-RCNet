@@ -1,0 +1,29 @@
+# CUDA_VISIBLE_DEVICE='0, 1, 2, 3' python -m torch.distributed.launch --nproc_per_node 4 main.py
+python RCN_Main.py \
+    --storage_folder 'cub_global1d5_local2' \
+    --DLC True \
+    --global_loss_weight 1.5 \
+    --local_loss_weight 2 \
+    --local_rank 0 \
+    --temperature 16.0 \
+    --dataset 'cub_200' \
+    --network 'ResNet18' \
+    --pretrain False \
+    --train_flag True \
+    --test_method 'inc' \
+    --sim_metric 'euc' \
+    --epoch 50 \
+    --tasks 200 \
+    --n-way 5 \
+    --n-shot 20 \
+    --n-query 5 \
+    --use_auto_scheduler False \
+    --batch_size_test 100 \
+    --optimizer 'sgd' \
+    --lr 2e-4 \
+    --wd 5e-4 \
+    --momentum 0.9 \
+    --nesterov True \
+    --scheduler 'SLR' \
+    --steps 20 \
+    --gamma 0.5
