@@ -1,6 +1,6 @@
 # Knowledge Transfer-Driven Few-Shot Class Incremental Learning
 
-## Few-shot class incremental learning (FSCIL) aims to continually learn new classes using a few samples while not forgetting the old classes. To address this issue, we propose a Random Episode Sampling and Augmentation (RESA) strategy that mimics the real incremental setting and constructs pseudo incremental tasks globally and locally to coincide with the learning objective of FSCIL and further improve the model's plasticity, respectively.Furthermore, to make convincing incremental predictions, we introduce a complementary model with a squared Euclidean-distance classifier as the auxiliary module, which couples with the widely used cosine classifier to form our whole architecture.
+Few-shot class incremental learning (FSCIL) aims to continually learn new classes using a few samples while not forgetting the old classes. To address this issue, we propose a Random Episode Sampling and Augmentation (RESA) strategy that mimics the real incremental setting and constructs pseudo incremental tasks globally and locally to coincide with the learning objective of FSCIL and further improve the model's plasticity, respectively.Furthermore, to make convincing incremental predictions, we introduce a complementary model with a squared Euclidean-distance classifier as the auxiliary module, which couples with the widely used cosine classifier to form our whole architecture.
 
 <img src='imgs/method.png' width='640' height='280'>
 
