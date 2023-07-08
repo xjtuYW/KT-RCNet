@@ -64,4 +64,19 @@ pip install numpy==1.24.3
   
     ```bash scripts/cub/cub.sh```
 
+## BibTeX
+
+If you find our work helpful, please cite the following:
+
+```
+@misc{wang2023knowledge,
+      title={Knowledge Transfer-Driven Few-Shot Class-Incremental Learning}, 
+      author={Ye Wang and Yaxiong Wang and Guoshuai Zhao and Xueming Qian},
+      year={2023},
+      eprint={2306.10942},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
 
